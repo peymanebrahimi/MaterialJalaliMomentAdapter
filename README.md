@@ -45,7 +45,7 @@ npm install material-jalali-moment-adapter
 
 
 [travis-url]: https://travis-ci.org/peymanebrahimi/MaterialJalaliMomentAdapter
-[travis-image]: https://travis-ci.org/peymanebrahimi/MaterialJalaliMomentAdapter.png?branch=master
+[travis-image]: https://travis-ci.org/peymanebrahimi/MaterialJalaliMomentAdapter.svg?branch=master
 <!-- 
 [packageQuality-image]: http://npm.packagequality.com/shield/jalali-moment.svg
 [packageQuality-url]: http://packagequality.com/#?package=jalali-moment
