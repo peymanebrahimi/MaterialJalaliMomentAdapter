@@ -12,6 +12,12 @@
     },
     {
       "path": "./projects/material-jalali-moment-adapter/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/jalaliAdapterUsage/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/jalaliAdapterUsage/tsconfig.spec.json"
     }
 ]
 }

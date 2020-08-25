@@ -1,7 +1,7 @@
 import { Inject, Optional } from "@angular/core";
+import { MatMomentDateAdapterOptions, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
 import { DateAdapter, MAT_DATE_LOCALE } from '@angular/material/core';
 import * as moment from "jalali-moment";
-import { MatMomentDateAdapterOptions, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
 
 
 /** Creates an array and fills it with values. */
@@ -285,11 +285,13 @@ export class JalaliMomentDateAdapter extends DateAdapter<moment.Moment> {
       if (!value) {
         return null;
       }
-      if (this.locale === "fa") {
-        date = moment(value).locale("fa");
-      } else {
-        date = this._createMoment(value).locale(this.locale);
-      }
+      // if (this.locale === "fa") {
+      //   // date = moment(value).locale("fa");
+      //   date = this._createMoment(value).locale("fa");
+      // } else {
+      //   date = this._createMoment(value).locale(this.locale);
+      // }
+      date = this._createMoment(value).locale(this.locale);
     }
     if (date && this.isValid(date)) {
       return date;

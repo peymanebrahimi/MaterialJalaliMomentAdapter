@@ -1,5 +1,6 @@
 import { LOCALE_ID } from "@angular/core";
 import { async, inject, TestBed } from "@angular/core/testing";
+import { MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
 import {
   DateAdapter,
   //   DEC,
@@ -10,10 +11,10 @@ import {
 } from "@angular/material/core";
 import * as moment from "jalali-moment";
 import {
+  JalaliMomentDateAdapter,
   //  MomentDateModule, 
-   JalaliMomentDateModule,
-   JalaliMomentDateAdapter } from "../index";
-import { MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
+  JalaliMomentDateModule
+} from "../index";
 
 const First_Month = 0,
   FEB = 1,
