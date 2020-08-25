@@ -1,6 +1,6 @@
 {
   "name": "material-jalali-moment-adapter",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "homepage": "https://github.com/peymanebrahimi/MaterialJalaliMomentAdapter",
   "peerDependencies": {
     "@angular/core": "^10.0.6",
