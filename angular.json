@@ -2,5 +2,49 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "MaterialJalaliMomentAdapter": {
+      "projectType": "library",
+      "root": "projects/material-jalali-moment-adapter",
+      "sourceRoot": "projects/material-jalali-moment-adapter/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/material-jalali-moment-adapter/tsconfig.lib.json",
+            "project": "projects/material-jalali-moment-adapter/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/material-jalali-moment-adapter/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/material-jalali-moment-adapter/src/test.ts",
+            "tsConfig": "projects/material-jalali-moment-adapter/tsconfig.spec.json",
+            "karmaConfig": "projects/material-jalali-moment-adapter/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/material-jalali-moment-adapter/tsconfig.lib.json",
+              "projects/material-jalali-moment-adapter/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "cli": {
+    "analytics": "f4352c84-91c6-45c0-abc0-99a91c09a3cf"
+  },
+  "defaultProject": "MaterialJalaliMomentAdapter"
 }
