@@ -1,33 +1,65 @@
 # &#x202b; آداپتور هجری شمسی برای Angular Material DatePicker
-
+   
 
 [![MIT License][license-image]][license-url]
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-version-image]][npm-url]
-[![Package Quality][packageQuality-image]][packageQuality-url]
-[![dependencies Quality][dependencies-quality]][dependencies-quality-url]
-[![dev dependencies Quality][dev-dependencies-quality]][dev-dependencies-quality-url]
 [![Codacy Badge][codacy-quality]][codacy-quality-url]
-[![Codacy Badge][codacy-coverage]][codacy-coverage-url]
 
+Set jalali (shamsi, persian, khorshidi) dates for Angular Material DatePicker.
 
+<br/>
 
+<img src="https://user-images.githubusercontent.com/8337959/91179472-c84eab00-e6fb-11ea-83c0-f6dce06a9474.png" width="314" height="370" alt="PersianDatePicker"> 
 
+<br/>
+<br/>
 
-## Based on [Jalali Moment](https://github.com/fingerpich/jalali-moment) js library.
+## Jalali calendar system borrowed from [Jalali Moment](https://github.com/fingerpich/jalali-moment) js library.
 
-## Jalali moment [DateAdapter](https://blog.angular.io/taking-advantage-of-the-angular-material-datepicker-237e80fa14b3) for angular material datepicker.
+## An npm package that contains jalali moment [DateAdapter](https://blog.angular.io/taking-advantage-of-the-angular-material-datepicker-237e80fa14b3) for angular material datepicker.
 
+<br/>
 
+## How to
 
-### Install via **npm**
-```
+### **Install** via **npm**
+```shell
 npm install material-jalali-moment-adapter
 
 ```
 
-
 ### Usage
+
+#### API reference
+
+Add to your ngModule:
+```typescript
+import { MaterialJalaliMomentAdapterModule } from 'material-jalali-moment-adapter';
+
+```
+That's it. You will have Jalali calendar for your datePickers.
+
+### Demo
+
+[* Simple Usage](https://peymanebrahimi.github.io/MaterialJalaliMomentAdapter/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -35,29 +67,14 @@ npm install material-jalali-moment-adapter
 
 
 [npm-url]: https://npmjs.org/package/material-jalali-moment-adapter
-
 [npm-version-image]: http://img.shields.io/npm/v/material-jalali-moment-adapter.svg?style=flat
-
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 
-
-
 [travis-url]: https://travis-ci.org/peymanebrahimi/MaterialJalaliMomentAdapter
 [travis-image]: https://travis-ci.org/peymanebrahimi/MaterialJalaliMomentAdapter.svg?branch=master
-<!-- 
-[packageQuality-image]: http://npm.packagequality.com/shield/jalali-moment.svg
-[packageQuality-url]: http://packagequality.com/#?package=jalali-moment
 
-[dependencies-quality]: https://david-dm.org/fingerpich/jalali-moment.svg
-[dependencies-quality-url]: https://david-dm.org/fingerpich/jalali-moment
 
-[dev-dependencies-quality]: https://david-dm.org/fingerpich/jalali-moment/dev-status.svg
-[dev-dependencies-quality-url]: https://david-dm.org/fingerpich/jalali-moment?type=dev
-
-[codacy-quality]:https://api.codacy.com/project/badge/Grade/1aa5b7aadfc24238bdf825d58cb2cba1
-[codacy-quality-url]:https://www.codacy.com/app/zarei-bs/jalali-moment?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fingerpich/jalali-moment&amp;utm_campaign=Badge_Grade
-
-[codacy-coverage]:https://api.codacy.com/project/badge/Coverage/1aa5b7aadfc24238bdf825d58cb2cba1
-[codacy-coverage-url]:https://www.codacy.com/app/zarei-bs/jalali-moment?utm_source=github.com&utm_medium=referral&utm_content=fingerpich/jalali-moment&utm_campaign=Badge_Coverage -->
+[codacy-quality]:https://api.codacy.com/project/badge/Grade/1b424dc44eb040d1a8c10fe9ba58016d
+[codacy-quality-url]:https://www.codacy.com/manual/peymanebrahimi/MaterialJalaliMomentAdapter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=peymanebrahimi/MaterialJalaliMomentAdapter&amp;utm_campaign=Badge_Grade

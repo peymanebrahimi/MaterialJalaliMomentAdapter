@@ -1,24 +1,82 @@
-# MaterialJalaliMomentAdapter
+# &#x202b; آداپتور هجری شمسی برای Angular Material DatePicker
+   
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.11.
+[![MIT License][license-image]][license-url]
+[![Build Status][travis-image]][travis-url]
+[![NPM version][npm-version-image]][npm-url]
+[![Codacy Badge][codacy-quality]][codacy-quality-url]
 
-## Code scaffolding
+Set jalali (shamsi, persian, khorshidi) dates for Angular Material DatePicker.
 
-Run `ng generate component component-name --project MaterialJalaliMomentAdapter` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project MaterialJalaliMomentAdapter`.
-> Note: Don't forget to add `--project MaterialJalaliMomentAdapter` or else it will be added to the default project in your `angular.json` file. 
+<br/>
 
-## Build
+<img src="https://user-images.githubusercontent.com/8337959/91179472-c84eab00-e6fb-11ea-83c0-f6dce06a9474.png" width="314" height="370" alt="PersianDatePicker"> 
 
-Run `ng build MaterialJalaliMomentAdapter` to build the project. The build artifacts will be stored in the `dist/` directory.
+<br/>
+<br/>
 
-## Publishing
+## Jalali calendar system borrowed from [Jalali Moment](https://github.com/fingerpich/jalali-moment) js library.
 
-After building your library with `ng build MaterialJalaliMomentAdapter`, go to the dist folder `cd dist/material-jalali-moment-adapter` and run `npm publish`.
+## An npm package that contains jalali moment [DateAdapter](https://blog.angular.io/taking-advantage-of-the-angular-material-datepicker-237e80fa14b3) for angular material datepicker.
 
-## Running unit tests
+<br/>
 
-Run `ng test MaterialJalaliMomentAdapter` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to
 
-## Further help
+### **Install** via **npm**
+```shell
+npm install material-jalali-moment-adapter
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+
+### Usage
+
+#### API reference
+
+Add to your ngModule:
+```typescript
+import { MaterialJalaliMomentAdapterModule } from 'material-jalali-moment-adapter';
+
+```
+That's it. You will have Jalali calendar for your datePickers.
+
+### Demo
+
+[* Simple Usage](https://peymanebrahimi.github.io/MaterialJalaliMomentAdapter/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[npm-url]: https://npmjs.org/package/material-jalali-moment-adapter
+[npm-version-image]: http://img.shields.io/npm/v/material-jalali-moment-adapter.svg?style=flat
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
+
+[travis-url]: https://travis-ci.org/peymanebrahimi/MaterialJalaliMomentAdapter
+[travis-image]: https://travis-ci.org/peymanebrahimi/MaterialJalaliMomentAdapter.svg?branch=master
+
+
+[codacy-quality]:https://api.codacy.com/project/badge/Grade/1b424dc44eb040d1a8c10fe9ba58016d
+[codacy-quality-url]:https://www.codacy.com/manual/peymanebrahimi/MaterialJalaliMomentAdapter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=peymanebrahimi/MaterialJalaliMomentAdapter&amp;utm_campaign=Badge_Grade
+
+pe
