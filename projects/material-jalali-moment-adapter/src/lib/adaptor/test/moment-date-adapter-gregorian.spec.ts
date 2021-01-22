@@ -1,5 +1,5 @@
 import { LOCALE_ID } from "@angular/core";
-import { async, inject, TestBed } from "@angular/core/testing";
+import { inject, TestBed, waitForAsync } from "@angular/core/testing";
 import { MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
 import {
   DateAdapter,
@@ -29,7 +29,7 @@ describe("GregorianMomentDateAdapter", () => {
   let adapter: JalaliMomentDateAdapter;
   let assertValidDate: (d: moment.Moment | null, valid: boolean) => void;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [JalaliMomentDateModule]
     }).compileComponents();
@@ -650,7 +650,7 @@ describe("GregorianMomentDateAdapter", () => {
 describe("GregorianMomentDateAdapter with MAT_DATE_LOCALE override", () => {
   let adapter: JalaliMomentDateAdapter;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [JalaliMomentDateModule],
       providers: [{ provide: MAT_DATE_LOCALE, useValue: "ja-JP" }]
@@ -672,7 +672,7 @@ describe("GregorianMomentDateAdapter with MAT_DATE_LOCALE override", () => {
 describe("GregorianMomentDateAdapter with LOCALE_ID override", () => {
   let adapter: JalaliMomentDateAdapter;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [JalaliMomentDateModule],
       providers: [{ provide: LOCALE_ID, useValue: "fr" }]
@@ -694,7 +694,7 @@ describe("GregorianMomentDateAdapter with LOCALE_ID override", () => {
 describe("GregorianMomentDateAdapter with MAT_MOMENT_DATE_ADAPTER_OPTIONS override", () => {
   let adapter: JalaliMomentDateAdapter;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [JalaliMomentDateModule],
       providers: [
