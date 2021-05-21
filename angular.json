@@ -58,7 +58,6 @@
             "main": "projects/jalaliAdapterUsage/src/main.ts",
             "polyfills": "projects/jalaliAdapterUsage/src/polyfills.ts",
             "tsConfig": "projects/jalaliAdapterUsage/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/jalaliAdapterUsage/src/favicon.ico",
               "projects/jalaliAdapterUsage/src/assets"
@@ -66,7 +65,13 @@
             "styles": [
               "projects/jalaliAdapterUsage/src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
