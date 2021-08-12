@@ -14,7 +14,8 @@ export * from './jalali_moment_formats';
       provide: DateAdapter,
       useClass: JalaliMomentDateAdapter,
       deps: [MAT_DATE_LOCALE, MAT_MOMENT_DATE_ADAPTER_OPTIONS]
-    }
+    },
+    {provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: {useUtc: true}}
   ],
 })
 export class JalaliMomentDateModule { }

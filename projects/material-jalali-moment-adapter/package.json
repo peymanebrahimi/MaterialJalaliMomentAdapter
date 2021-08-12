@@ -1,6 +1,6 @@
 {
   "name": "material-jalali-moment-adapter",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "homepage": "https://github.com/peymanebrahimi/MaterialJalaliMomentAdapter",
   "peerDependencies": {
     "@angular/common":"^12.2.1"

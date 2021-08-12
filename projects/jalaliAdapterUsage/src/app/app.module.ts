@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ReactiveFormsModule } from "@angular/forms";
+import { MatLuxonDateModule } from '@angular/material-luxon-adapter';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDividerModule } from '@angular/material/divider';
@@ -27,6 +28,7 @@ import { AppComponent } from './app.component';
     MatDatepickerModule,
     MatInputModule,
     MaterialJalaliMomentAdapterModule, // <--- add this module
+    // MatLuxonDateModule,
     AppRoutingModule
   ],
   providers: [],
