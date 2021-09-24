@@ -1,31 +1,11 @@
-<div fxLayout="column">
-  <mat-card>
-    <mat-card-title>Simple datepicker</mat-card-title>
-    <mat-card-subtitle></mat-card-subtitle>
-    <mat-card-content>
-      <mat-form-field>
-        <input matInput [matDatepicker]="simplePicker" placeholder="Choose a date">
-        <mat-datepicker-toggle matSuffix [for]="simplePicker"></mat-datepicker-toggle>
-        <mat-datepicker #simplePicker></mat-datepicker>
-      </mat-form-field>
-    </mat-card-content>
-    <mat-card-footer></mat-card-footer>
-  </mat-card>
+<mat-toolbar color='primary'>
+  <span class="example-spacer"></span>
+  <div>
+    <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+    <a mat-button routerLink="/multi/greg" routerLinkActive="active">Gregorian</a>
+    <a mat-button routerLink="/multi/jalali" routerLinkActive="active">Jalali</a>
+  </div>
+  <span class="example-spacer"></span>
+</mat-toolbar>
 
-  <mat-divider></mat-divider>
-
-  <mat-card>
-    <mat-card-title>json gregorian input</mat-card-title>
-    <mat-card-subtitle></mat-card-subtitle>
-    <mat-card-content>
-      <mat-form-field>
-        <input matInput [matDatepicker]="picker1" placeholder="Choose a date" [formControl]="dateControl">
-        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-        <mat-datepicker #picker1></mat-datepicker>
-      </mat-form-field>
-    </mat-card-content>
-    <mat-card-footer></mat-card-footer>
-  </mat-card>
-  <mat-divider></mat-divider>
-
-</div>
+<router-outlet></router-outlet>

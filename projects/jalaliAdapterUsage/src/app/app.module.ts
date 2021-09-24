@@ -12,10 +12,14 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialJalaliMomentAdapterModule } from 'material-jalali-moment-adapter';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HomeComponent } from './home/home.component';
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatButtonModule } from '@angular/material/button';
+// import { MaterialJalaliMomentAdapterModule } from 'projects/material-jalali-moment-adapter/src/lib/adaptor';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +27,8 @@ import { AppComponent } from './app.component';
     ReactiveFormsModule,
     FlexLayoutModule,
     MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
     MatFormFieldModule,
     MatDividerModule,
     MatDatepickerModule,
