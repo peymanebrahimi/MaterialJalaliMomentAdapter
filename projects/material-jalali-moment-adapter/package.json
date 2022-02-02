@@ -1,14 +1,14 @@
 {
   "name": "material-jalali-moment-adapter",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "homepage": "https://github.com/peymanebrahimi/MaterialJalaliMomentAdapter",
   "peerDependencies": {
-    "@angular/common":"^12.2.1"
+    "@angular/common":"^13.0.0"
   },
   "dependencies": {
-    "@angular/cdk": "^12.2.1",
-    "@angular/material": "^12.2.1",
-    "@angular/material-moment-adapter": "^12.2.1",
+    "@angular/cdk": "^13.0.0",
+    "@angular/material": "^13.0.0",
+    "@angular/material-moment-adapter": "^13.0.0",
     "jalali-moment": "^3.3.10",
     "tslib": "^2.3.1"
   }
