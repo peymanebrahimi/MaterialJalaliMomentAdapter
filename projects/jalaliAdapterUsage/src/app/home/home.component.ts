@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { FormControl } from '@angular/forms';
 export class HomeComponent implements OnInit {
 
   jsonDate = "2018-10-15T20:21:29.4674496";
-  dateControl = new FormControl(this.jsonDate);
+  dateControl = new UntypedFormControl(this.jsonDate);
   
   constructor() { }
 
