@@ -7,13 +7,13 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-// import { MaterialJalaliMomentAdapterModule } from 'material-jalali-moment-adapter/src/lib/adaptor';
+import { MaterialJalaliMomentAdapterModule } from 'material-jalali-moment-adapter';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from '@angular/material/button';
-import { MaterialJalaliMomentAdapterModule } from 'projects/material-jalali-moment-adapter/src/lib/adaptor';
+// import { MaterialJalaliMomentAdapterModule } from 'projects/material-jalali-moment-adapter/src/lib/adaptor';
 @NgModule({
   declarations: [
     AppComponent,
