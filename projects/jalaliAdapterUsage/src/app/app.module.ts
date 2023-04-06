@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from "@angular/flex-layout";
 import { ReactiveFormsModule } from "@angular/forms";
-import { MatLuxonDateModule } from '@angular/material-luxon-adapter';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDividerModule } from '@angular/material/divider';
@@ -25,7 +23,6 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FlexLayoutModule,
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
@@ -34,7 +31,6 @@ import { MatButtonModule } from '@angular/material/button';
     MatDatepickerModule,
     MatInputModule,
     MaterialJalaliMomentAdapterModule, // <--- add this module
-    // MatLuxonDateModule,
     AppRoutingModule
   ],
   providers: [],
